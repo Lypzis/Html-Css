@@ -1,7 +1,73 @@
+/* applies to all elements of the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* very important */
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* applies to everything inside the body */
 body {
+    font-family: sans-serif, Arial, Helvetica; /* if sans is not available, switch to the second option and so on */
+    font-size: 18px; /* inherits, unless overided */
+}
+
+h1, h2 { /* avoid repeated code */
+    color: rgb(2, 136, 69); /* color of the h1 tags */
     text-align: center;
 }
 
-p {
+h1 {
+    font-size: 40px; /* overide text size */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 25px; /* overide text size */
+    margin-bottom: 10px;
+}
+
+.main-text {
     text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* bad practice to use id's, not reusable */
+
+.author-text {
+    font-size: 22px;
+}
+
+.container {
+    width: 1140px;
+    
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    */
+
+        /* top right bottom left */
+    margin: 20px auto 0 auto;
+}
+
+.blog-post {
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+}
+
+.other-posts {
+    width: 25%;
+    float: left; /* float the element to the right side of another( if there is space ) */
+}
+
+.author-box {
+    padding: 20px 0 10px 20px;
+    border: 1px solid rgb(126, 124, 124);
 }
