@@ -15,10 +15,11 @@
 body {
     font-family: sans-serif, Arial, Helvetica; /* if sans is not available, switch to the second option and so on */
     font-size: 18px; /* inherits, unless overided */
+    background-color: rgb(155, 198, 241);
 }
 
 h1, h2 { /* avoid repeated code */
-    color: rgb(2, 136, 69); /* color of the h1 tags */
+    color: rgb(2, 110, 56); /* color of the h1 tags */
     text-align: center;
 }
 
@@ -39,10 +40,6 @@ h2 {
 
 /* bad practice to use id's, not reusable */
 
-.author-text {
-    font-size: 22px;
-}
-
 .container {
     width: 1140px;
     
@@ -60,6 +57,19 @@ h2 {
     width: 75%;
     float: left;
     padding-right: 30px;
+    position: relative;
+}
+
+.blog-post img {
+    height: 150px;
+    width: auto;
+}
+
+.date {
+    position: absolute; /* position determinated by me */
+    top: 10px;
+    right: 30px;
+    font-style: italic;
 }
 
 .other-posts {
@@ -67,7 +77,27 @@ h2 {
     float: left; /* float the element to the right side of another( if there is space ) */
 }
 
+.other {
+    margin-bottom: 40px;
+}
+
+.author-text {
+    font-size: 22px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
 .author-box {
-    padding: 20px 0 10px 20px;
-    border: 1px solid rgb(126, 124, 124);
+    margin-bottom: 10px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(126, 124, 124);
+}
+
+/*select only img inside author-box */
+.author-box img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; /* image becomes a circle */
+    float: left;
 }
