@@ -14,7 +14,7 @@
 
 /* applies to everything inside the body */
 body {
-    font-family: sans-serif, Arial, Helvetica; /* if sans is not available, switch to the second option and so on */
+    font-family: 'Raleway', 'Merriweather', sans-serif, serif;
     font-size: 18px; /* inherits, unless overided */
     background-color: rgb(23, 91, 159)
 }
